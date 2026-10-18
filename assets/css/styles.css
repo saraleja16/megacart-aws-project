@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #001f3f; /* Deep navy */
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff5733; /* Vibrant coral/orange */
+    text-decoration: none;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #ff5733;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(to right, #001f3f, #003366);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-banner .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-banner .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-banner .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-banner .btn:hover {
+    background-color: #cc4629;
+}
+
+/* Product Categories */
+.categories {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #001f3f;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.category {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #001f3f;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Featured Deals */
+.featured-deals {
+    padding: 3rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.featured-deals h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #001f3f;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.deal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.deal h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #001f3f;
+}
+
+.deal p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 3rem 2rem;
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletter button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #cc4629;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-banner .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-banner .hero-content p {
+        font-size: 1rem;
+    }
+
+    .categories h2,
+    .featured-deals h2,
+    .newsletter h2 {
+        font-size: 1.8rem;
+    }
+}
